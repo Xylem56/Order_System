@@ -7,10 +7,10 @@
 | POST | /auth/register | None (requires a valid, unused staffId) | `{ full_name, email, password, staffId }` |
 | POST | /auth/login | None | `{ email, password }` → returns `{ token }` |
 
-No public self-signup — `/register` is gated by possession of a staffId that
+No public self-signup  `/register` is gated by possession of a staffId that
 only the company distributes (see Notes.md).
 
-## Orders — staff only (JWT required)
+## Orders { staff only (JWT required) }
 
 | Method | Endpoint | Body |
 |---|---|---|
@@ -19,7 +19,7 @@ only the company distributes (see Notes.md).
 
 Both require `Authorization: Bearer <token>`.
 
-## Orders — public
+## Orders { public }
 
 | Method | Endpoint | Auth |
 |---|---|---|
