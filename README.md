@@ -1,7 +1,7 @@
 
 # Order Tracking API
 
-A backend service for tracking shipments through their delivery lifecycle. It models the internal system a courier company would run — staff create shipment records and log status updates as a package moves, while tracking lookups are publicly accessible with no authentication, consistent with how real courier tracking pages work.
+A backend service for tracking shipments through their delivery lifecycle. It models the internal system a courier company would run staff create shipment records and log status updates as a package moves, while tracking lookups are publicly accessible with no authentication, consistent with how real courier tracking pages work.
 
 This is not an e-commerce order system. There is no checkout flow, product catalog, or customer-facing order creation the scope is limited to shipment tracking.
 
@@ -18,7 +18,7 @@ Full data modeling and API design rationale are documented in `system design/`.
 - Node.js / Express
 - DynamoDB (AWS SDK v3), run locally via LocalStack
 - JWT-based authentication, bcrypt password hashing
-- Docker Compose (application and LocalStack run together — no separate LocalStack installation required)
+- Docker Compose (application and LocalStack run together no separate LocalStack installation required)
 
 ## Setup
 
